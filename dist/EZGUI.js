@@ -575,6 +575,7 @@ var EZGUI;
         Compatibility.isPhaser26 = Compatibility.isPhaser && Phaser.VERSION.indexOf('2.6') == 0;
         Compatibility.isPhaser24plus = Compatibility.isPhaser24 || Compatibility.isPhaser25 || Compatibility.isPhaser26;
         Compatibility.BitmapText = Compatibility.PIXIVersion >= 3 ? PIXI.extras.BitmapText : PIXI.BitmapText;
+        Compatibility.BitmapText = Phaser.BitmapText;
         var TilingSprite = (function () {
             function TilingSprite(texture, width, height) {
             }
